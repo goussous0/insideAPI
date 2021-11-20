@@ -147,7 +147,7 @@ def users():
 
 
 @api.route('/message',  methods=['POST'])
-#@token_required
+@token_required
 def message():
 
 
@@ -178,7 +178,7 @@ def message():
 
 
 @api.route('/history')
-#@token_required
+@token_required
 def history():
 
 
